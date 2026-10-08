@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P. Hasini Diya | Resume</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eeeae7;
+            color: #292929;
+            line-height: 1.5;
+        }
+
+        /* MAIN RESUME */
+
+        .resume {
+            width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 1100px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+        }
+
+        /* LEFT COLUMN */
+
+        .sidebar {
+            background: #292b2d;
+            color: white;
+            padding: 40px 28px;
+            position: relative;
+        }
+
+        .sidebar::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: #d98f8f;
+        }
+
+        .profile-circle {
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            background: #d98f8f;
+            margin: 20px auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .sidebar h1 {
+            text-align: center;
+            font-size: 23px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .role {
+            text-align: center;
+            color: #dba2a2;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .side-section {
+            margin-bottom: 28px;
+        }
+
+        .side-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #dba2a2;
+            border-bottom: 1px solid #555;
+            padding-bottom: 7px;
+            margin-bottom: 12px;
+        }
+
+        .contact-item {
+            font-size: 11px;
+            margin-bottom: 10px;
+            color: #eeeeee;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: white;
+            margin-bottom: 2px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            font-size: 11px;
+            margin-bottom: 8px;
+            color: #eeeeee;
+        }
+
+        .sidebar li::before {
+            content: "◆";
+            color: #d98f8f;
+            font-size: 7px;
+            margin-right: 8px;
+        }
+
+        /* SKILLS */
+
+        .skill {
+            margin-bottom: 13px;
+        }
+
+        .skill-name {
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+
+        .skill-line {
+            height: 5px;
+            background: #555;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 100%;
+            background: #d98f8f;
+            border-radius: 10px;
+        }
+
+        /* RIGHT CONTENT */
+
+        .content {
+            padding: 45px 45px;
+        }
+
+        .intro {
+            margin-bottom: 35px;
+        }
+
+        .hello {
+            font-size: 12px;
+            color: #d18484;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .intro h2 {
+            font-size: 31px;
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+
+        .intro h2 span {
+            color: #c87878;
+        }
+
+        .intro p {
+            font-size: 12px;
+            color: #555;
+            max-width: 500px;
+        }
+
+        /* SECTION */
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 17px;
+        }
+
+        .section-heading h3 {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .section-heading::after {
+            content: "";
+            height: 1px;
+            background: #ddd;
+            flex: 1;
+        }
+
+        .section-number {
+            color: #d18484;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        /* EDUCATION */
+
+        .education {
+            position: relative;
+            padding-left: 22px;
+            border-left: 2px solid #ead0d0;
+        }
+
+        .education-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .education-item::before {
+            content: "";
+            position: absolute;
+            left: -29px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: #d18484;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #d18484;
+        }
+
+        .education-year {
+            font-size: 10px;
+            color: #c87878;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .education-item h4 {
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        .education-item p {
+            font-size: 11px;
+            color: #666;
+        }
+
+        /* MARKS */
+
+        .marks {
+            display: flex;
+            gap: 10px;
+            margin-top: 7px;
+        }
+
+        .mark-box {
+            background: #f7eeee;
+            padding: 4px 9px;
+            border-radius: 5px;
+            font-size: 10px;
+            color: #9b5e5e;
+        }
+
+        /* PROJECT CARDS */
+
+        .project-card {
+            background: #faf7f6;
+            border-left: 4px solid #d18484;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .project-card h4 {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .project-card p {
+            font-size: 11px;
+            color: #666;
+        }
+
+        /* INTERESTS */
+
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .interest {
+            padding: 12px;
+            background: #f8f4f3;
+            border-radius: 8px;
+            font-size: 11px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .interest span {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        /* DECLARATION */
+
+        .declaration {
+            background: #292b2d;
+            color: white;
+            padding: 18px;
+            border-radius: 8px;
+            font-size: 10px;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-size: 11px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            margin-top: 25px;
+            padding-top: 12px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            color: #777;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 950px) {
+
+            .resume {
+                width: 95%;
+            }
+
+        }
+
+        @media (max-width: 700px) {
+
+            .resume {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                padding: 35px;
+            }
+
+            .content {
+                padding: 35px;
+            }
+
+        }
+
+        /* PRINT */
+
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="resume">
+
+        <!-- ================= LEFT SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="profile-circle">
+                HD
+            </div>
+
+            <h1>P. Hasini Diya</h1>
+
+            <div class="role">
+                BBA • AI & DATA ANALYTICS
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="side-section">
+
+                <div class="side-title">
+                    Contact
+                </div>
+
+                <div class="contact-item">
+                    <strong>Location</strong>
+                    Panjim, Goa
+                </div>
+
+                <div class="contact-item">
+                    <strong>Phone</strong>
+                    3456890450
+                </div>
+
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    hasi@gmail.com
+                </div>
+
+            </div>
+
+
+            <!-- SKILLS -->
+
+            <div class="side-section">
+
+                <div class="side-title">
+                    Skills
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Microsoft Word</div>
+                    <div class="skill-line">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Microsoft Excel</div>
+                    <div class="skill-line">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">PowerPoint</div>
+                    <div class="skill-line">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Communication</div>
+                    <div class="skill-line">
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Teamwork</div>
+                    <div class="skill-line">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name">Basic AI Tools</div>
+                    <div class="skill-line">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- LANGUAGES -->
+
+            <div class="side-section">
+
+                <div class="side-title">
+                    Languages
+                </div>
+
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>Kannada</li>
+                    <li>Telugu</li>
+                    <li>Tamil</li>
+                </ul>
+
+            </div>
+
+
+            <!-- PERSONAL -->
+
+            <div class="side-section">
+
+                <div class="side-title">
+                    Strengths
+                </div>
+
+                <ul>
+                    <li>Quick Learner</li>
+                    <li>Adaptability</li>
+                    <li>Teamwork</li>
+                    <li>Time Management</li>
+                    <li>Presentation Skills</li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================= RIGHT CONTENT ================= -->
+
+        <main class="content">
+
+
+            <!-- INTRO -->
+
+            <section class="intro">
+
+                <div class="hello">
+                    Hello, I'm
+                </div>
+
+                <h2>
+                    P. Hasini <span>Diya</span>
+                </h2>
+
+                <p>
+                    Motivated and enthusiastic first-year BBA student specializing
+                    in AI and Data Analytics. Interested in technology, business,
+                    communication and creative problem-solving. Eager to gain
+                    practical experience and develop professional skills.
+                </p>
+
+            </section>
+
+
+            <!-- EDUCATION -->
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <h3>Education</h3>
+                </div>
+
+                <div class="education">
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            2026 — 2029
+                        </div>
+
+                        <h4>
+                            BBA in AI and Data Analytics
+                        </h4>
+
+                        <p>
+                            SS Dempo College
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            CLASS 12
+                        </div>
+
+                        <h4>
+                            Higher Secondary Education
+                        </h4>
+
+                        <p>
+                            Completed Class 12
+                        </p>
+
+                        <div class="marks">
+                            <div class="mark-box">
+                                70%
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            CLASS 10
+                        </div>
+
+                        <h4>
+                            Secondary Education
+                        </h4>
+
+                        <p>
+                            Completed Class 10
+                        </p>
+
+                        <div class="marks">
+                            <div class="mark-box">
+                                75%
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJECTS -->
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <h3>Academic Projects & Activities</h3>
+                </div>
+
+
+                <div class="project-card">
+
+                    <h4>
+                        College Presentations
+                    </h4>
+
+                    <p>
+                        Prepared and delivered academic presentations,
+                        developing research, presentation and public
+                        speaking skills.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h4>
+                        Interview & Communication Activities
+                    </h4>
+
+                    <p>
+                        Participated in interview preparation and communication
+                        activities to improve confidence and interpersonal skills.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- INTERESTS -->
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <h3>Interests</h3>
+                </div>
+
+
+                <div class="interest-grid">
+
+                    <div class="interest">
+                        <span>💃</span>
+                        Dancing
+                    </div>
+
+                    <div class="interest">
+                        <span>🎧</span>
+                        Listening to Music
+                    </div>
+
+                    <div class="interest">
+                        <span>📚</span>
+                        Reading
+                    </div>
+
+                    <div class="interest">
+                        <span>📷</span>
+                        Photography
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- DECLARATION -->
+
+            <section class="section">
+
+                <div class="section-heading">
+                    <span class="section-number">04</span>
+                    <h3>Declaration</h3>
+                </div>
+
+                <div class="declaration">
+
+                    I hereby declare that the information provided above
+                    is true and correct to the best of my knowledge and belief.
+
+                </div>
+
+
+                <div class="signature">
+
+                    <strong>Place:</strong> Panjim, Goa
+                    <br>
+
+                    <strong>Date:</strong> ______________
+
+                    <br><br>
+
+                    <strong>Signature</strong>
+                    <br>
+                    P. Hasini Diya
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+
+            <div class="footer">
+
+                <span>RESUME • P. HASINI DIYA</span>
+
+                <span>BBA | AI & DATA ANALYTICS</span>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
